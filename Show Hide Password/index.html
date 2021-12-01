@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Show Hide Password</title>
+</head>
+<body>
+    <h1>Show-Hide Password Input <i class='bx bxs-lock-alt'></i></h1>
+    <p>Design Day 1</p>
+    <p class="namemark">-Created by Lakshit Chiranjiv Sagar</p>
+
+    <div class="input-area">
+        <label for="username">Username</label>
+        <br>
+        <div class="input-name-div">
+            <input type="text" placeholder="Enter Username" class="name-input" id="name-inputid">
+        </div>
+        <br>
+    
+        <label for="Password">Password</label>
+        <br>
+        <div class="input-pass-div">
+            
+            <input type="password" placeholder="Enter Password" class="pass-input pass-inputplace" id="pass-inputid">
+            
+            <div class="pass-overlay" id="ov1"><i class='bx bxs-show input-show'></i></div>
+            <div class="pass-overlay" id="ov2"><i class='bx bxs-hide input-hide'></i></div>
+            <div class="pass-overlay" id="ov3"></div>
+            
+        </div>
+        
+
+        <br>
+        <div class="input-sub-div">
+            <input type="submit" class="sub-input" id="sub-inputid">
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

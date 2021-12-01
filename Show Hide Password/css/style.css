@@ -1,0 +1,147 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-color: rgba(142, 252, 215,0.8);
+}
+
+h1,p,label{
+    text-align: center;
+    margin: 20px;
+}
+
+p{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    font-size: 12px;
+}
+
+p.namemark{
+    bottom: 1%;
+}
+
+.input-area{
+    /* background-color: blue; */
+    max-width: 45%;
+    margin: 70px auto;
+}
+
+.input-area label{
+    margin-left: 16%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-area input{
+    height: 40px;
+    width: 70%;
+
+    border-radius: 6px;
+    border: 0;
+}
+
+.input-area .input-name-div,.input-pass-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    background-color: black;
+    padding: 1.35rem 1.25rem;
+    border-radius: 6px;
+    max-width: 70%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.input-sub-div{
+    /* background-color: red; */
+    max-width: 70%;
+    margin: 20px auto;
+}
+
+.sub-input{
+    min-width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+
+    background: #00daff;
+    background: linear-gradient(136deg,#00daff 0%, #ffff00 40%, #00ff5e 80%);
+    background: -webkit-linear-gradient(136deg,#00daff 0%, #ffff00 40%, #00ff5e 80%);
+    background: -moz-linear-gradient(136deg,#00daff 0%, #ffff00 40%, #00ff5e 80%);
+
+    box-shadow: 0px 1px 12px 2px rgba(0,0,0,0.49) inset;
+    -webkit-box-shadow: 0px 1px 12px 2px rgba(0,0,0,0.49) inset;
+    -moz-box-shadow: 0px 1px 12px 2px rgba(0,0,0,0.49) inset;
+}
+
+.btn-clicked{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) inset;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) inset;
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) inset;
+
+    transition: 0.2s ease-in-out;
+}
+
+.input-hide,.input-show{
+    font-size: 1.3rem;
+    /* color: white; */
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+#ov2,#ov3{
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+#ov3{
+    z-index: 1;
+}
+
+#ov1,#ov2{
+    z-index: 2;
+}
+
+
+.pass-input,.name-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 0;
+    color: white;
+}
+
+.pass-overlay{
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    right: 1.6rem;
+    border-radius: 50%;
+    z-index: 0;
+    transition: 0.4s ease-in-out;
+}
+
+
+.pass-inputplace::placeholder,.name-input::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+
+
+.overlay-full{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    right: 0;
+}
