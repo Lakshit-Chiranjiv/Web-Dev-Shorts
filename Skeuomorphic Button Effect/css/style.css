@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(66, 66, 66);
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+
+span{
+    color: goldenrod ;
+}
+
+.switch{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 170px;
+}
+
+/* .check{
+    display: none;
+} */
+
+.buttons{
+    width: 6rem;
+    background: linear-gradient(90deg, #444650 0%, #101113 100%);
+    padding: .75rem 1.25rem .75rem 1rem;
+    border-radius: 3rem;
+    box-shadow: inset -2px 0 18px #212227,
+                inset -14px 0 6px #43454F,
+                inset 4px 0 6px #151619;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s;
+}
+
+.o-icon{
+    font-size: 18px;
+    color: goldenrod;
+}
+
+.x-icon{
+    font-size: 22px;
+    color: grey;
+}
+
+.check:checked + .buttons{
+    background: linear-gradient(90deg, #101113 0%, #444650 100%);
+    box-shadow: inset -2px 0 18px #212227,
+    inset -4px 0 6px #151619,
+    inset 14px 0 6px #43454F;
+    padding: .75rem 1rem .75rem 1.25rem;
+}
