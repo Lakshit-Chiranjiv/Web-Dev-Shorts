@@ -4,6 +4,8 @@ let d = document.getElementsByClassName('buttons')[0];
 let o = document.getElementsByClassName('o-icon')[0];
 let x = document.getElementsByClassName('x-icon')[0];
 
+let res = document.getElementById('reset');
+
 ch.addEventListener('change',()=>{
     if(ch.checked)
     {    
@@ -21,4 +23,11 @@ ch.addEventListener('change',()=>{
         o.style.fontSize = '16px';
         o.style.color = 'red';
     }
+});
+
+res.addEventListener('click',()=>{
+    o.style.fontSize = '18px';
+    o.style.color = 'goldenrod';
+    x.style.fontSize = '22px';
+    x.style.color = 'grey';
 });
