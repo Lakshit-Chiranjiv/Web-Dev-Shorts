@@ -11,4 +11,4 @@
 
 ### How it looks!!
 
-![screenshot](https://github.com/Lakshit-Chiranjiv/Web-Dev-Shorts/blob/main/Skeuomorphic%20Button%20Effect/assets/sitess.png.jpg)
+![screenshot](https://github.com/Lakshit-Chiranjiv/Web-Dev-Shorts/blob/main/Draggable%20User%20Cards/assets/sitess.png.jpg)
