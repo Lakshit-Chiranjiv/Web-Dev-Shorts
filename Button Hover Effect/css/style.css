@@ -1,0 +1,101 @@
+:root {
+    --x1-cord: 0;
+    --y1-cord: 0;
+    --x2-cord: 0;
+    --y2-cord: 0;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(87, 86, 86);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: white;
+}
+
+
+p{
+    text-align: end;
+    font-size: 12px;
+    margin-right: 4rem;
+    color: white;
+}
+
+p.namemark{
+    margin-bottom: 4rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttons-div{
+    width: 70%;
+    height: 40vh;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background-color: rgb(31, 30, 30);
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin: 0 30px;
+    border-radius: 5px;
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+    transition: color 0.8s;
+}
+
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: var(--y-cord);
+    left: var(--x-cord);
+    transform: translate(-50%,-50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transition: width 0.8s,height 0.8s;
+}
+
+#btn-1::before{
+    top: var(--y1-cord);
+    left: var(--x1-cord);
+    background-color: rgb(58, 231, 202);
+}
+
+#btn-2::before{
+    top: var(--y2-cord);
+    left: var(--x2-cord);
+    background-color: rgb(231, 219, 58);
+}
+
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+}
