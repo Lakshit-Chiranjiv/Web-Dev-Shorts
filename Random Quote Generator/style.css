@@ -51,12 +51,14 @@ hr{
     border-radius: 10px;
     min-width: 60%;
     max-width: 60%;
+    position: relative;
 }
 
 .card-head{
     margin: 20px;
     margin-top: 0;
 }
+
 
 .quoter{
     text-align: end;
@@ -121,3 +123,77 @@ hr{
 }
 
 
+/* loader */
+
+@keyframes jump {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+.loader{
+    display: none;
+    margin-top: 20px;
+}
+  
+.loader div{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline;
+    font-weight: 900;
+    font-size: 28px;
+    position: absolute;
+    top: 45%;
+}
+
+.loader .l-1{
+    background-color: red;
+    left: 40%;
+    animation: jump 1s ease 0s infinite;
+}
+.loader .l-2{
+    background-color: blue;
+    left: 45%;
+    animation: jump 1s ease 0.2s infinite;
+}
+.loader .l-3{
+    background-color: green;
+    left: 50%;
+    animation: jump 1s ease 0.4s infinite;
+}
+.loader .l-4{
+    background-color: rgb(255, 0, 212);
+    left: 55%;
+    animation: jump 1s ease 0.6s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .left-buttons{
+        display: flex;
+    }
+
+    .lbtn{
+        margin: 2px;
+    }
+
+    .right-buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .rbtn{
+        margin: 12px;
+        width: 100%;
+    }
+  }
