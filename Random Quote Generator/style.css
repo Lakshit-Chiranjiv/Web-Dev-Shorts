@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(135, 226, 170);
+}
+
+h1{
+    margin: 20px;
+}
+
+hr{
+    margin: 15px auto;
+    max-width: 80%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.mode{
+    height: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.mode i{
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.light{
+    display: none;
+}
+
+.dark{
+    display: block;
+}
+
+
+.quote-card{
+    background-color: white;
+    margin-top: 60px;
+    padding: 32px;
+    border-radius: 10px;
+    min-width: 60%;
+    max-width: 60%;
+}
+
+.card-head{
+    margin: 20px;
+    margin-top: 0;
+}
+
+.quoter{
+    text-align: end;
+    margin: 15px 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lbtn{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    box-shadow: 2px 2px 3px 2px rgba(135,132,132,0.42) inset;
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(135,132,132,0.42) inset;
+    -moz-box-shadow: 2px 2px 3px 2px rgba(135,132,132,0.42) inset;
+}
+
+.rbtn{
+    height: 45px;
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    border-width: 0;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    background-color: rgb(135, 226, 170);
+    box-shadow: 2px 2px 6px 2px rgba(89,89,89,0.45) inset;
+    -webkit-box-shadow: 2px 2px 6px 2px rgba(89,89,89,0.45) inset;
+    -moz-box-shadow: 2px 2px 6px 2px rgba(89,89,89,0.45) inset;
+}
+
+.rbtn:hover{
+    background-color: rgb(124, 243, 101);
+}
+
+.speak:hover{
+    background-color: rgb(248, 198, 175);
+}
+
+.copy:hover{
+    background-color: rgb(240, 238, 161);
+}
+
+.twitter:hover{
+    background-color: rgb(173, 232, 250);
+}
+
+.btn-click{
+    box-shadow: 0px 0px 0px 0px rgba(89,89,89,0.45) inset;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(89,89,89,0.45) inset;
+    -moz-box-shadow: 0px 0px 0px 0px rgba(89,89,89,0.45) inset;
+}
+
+
