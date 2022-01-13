@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    background: #fff;
+    transform: skew(-30deg);
+    transform-origin:top;
+    z-index: -2;
+  }
+
+h1{
+    /* margin: 60px; */
+    color: rgb(19, 174, 235);
+    margin-bottom: 0;
+}
+
+
+.menu{
+    width: 380px;
+    height: 400px;
+    margin-top: 70px;
+    /* background-color: rgb(194, 112, 112);
+    background-color: red;
+    box-shadow: 0 15px 25px red; */
+    margin: 70px auto;
+}
+
+.navigation ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.navbar ul li{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.navbar ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a span.item-icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.6em;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.navbar ul li.active-item a span.item-icon{
+    font-size: 1.2em;
+    transform: translateY(-7px);
+}
+
+.navbar ul li a span.item-name{
+    position: absolute;
+    font-size: 0.75em;
+    text-align: center;
+    transition: all 0.5s;
+    font-weight: 400;
+    opacity: 0;
+    letter-spacing: 0.05em;
+    transform: translateY(20px);
+    text-transform: uppercase;
+}
+
+.navbar ul li.active-item a span.item-name{
+    transform: translateY(10px);
+    opacity: 1;
+    /* color: white; */
+}
+
+.marker{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 0;
+    background-color: red;
+    border-radius: 12px;
+    transition: all 0.5s;
+    transform: translate(15px,4px);
+    opacity: 0;
+}
+
+.nav1 ul li:nth-child(1).active-item ~ .marker{
+    transform: translateX(calc((70px * 0) + 15px));
+    opacity: 1;
+    background-color: #ff1100;
+    box-shadow: 0 15px 25px #ff110099;
+}
+
+.nav1 ul li:nth-child(2).active-item ~ .marker{
+    transform: translateX(calc((70px * 1) + 15px));
+    opacity: 1;
+    background-color: #ff7b00;
+    box-shadow: 0 15px 25px #ff7b0099;
+}
+
+.nav1 ul li:nth-child(3).active-item ~ .marker{
+    transform: translateX(calc((70px * 2) + 15px));
+    opacity: 1;
+    background-color: #ffd000;
+    box-shadow: 0 15px 25px #ffd00099;
+}
+
+.nav1 ul li:nth-child(4).active-item ~ .marker{
+    transform: translateX(calc((70px * 3) + 15px));
+    opacity: 1;
+    background-color: #09ff00;
+    box-shadow: 0 15px 25px #09ff0099;
+}
+
+.nav1 ul li:nth-child(5).active-item ~ .marker{
+    transform: translateX(calc((70px * 4) + 15px));
+    opacity: 1;
+    background-color: #ff00aa;
+    box-shadow: 0 15px 25px #ff00aa99;
+}
+
+
+/* ------ */
+
+.nav2 ul li:nth-child(1).active-item ~ .marker{
+    transform: translateX(calc((70px * 0) + 15px));
+    opacity: 1;
+    background-color: #0066ff;
+    box-shadow: 0 15px 25px #0066ff99;
+}
+
+.nav2 ul li:nth-child(2).active-item ~ .marker{
+    transform: translateX(calc((70px * 1) + 15px));
+    opacity: 1;
+    background-color: #8400ff;
+    box-shadow: 0 15px 25px #8400ff99;
+}
+
+.nav2 ul li:nth-child(3).active-item ~ .marker{
+    transform: translateX(calc((70px * 2) + 15px));
+    opacity: 1;
+    background-color: #ff0062;
+    box-shadow: 0 15px 25px #ff006299;
+}
+
+.nav2 ul li:nth-child(4).active-item ~ .marker{
+    transform: translateX(calc((70px * 3) + 15px));
+    opacity: 1;
+    background-color: #ff7b00;
+    box-shadow: 0 15px 25px #ff7b0099;
+}
+
+.nav2 ul li:nth-child(5).active-item ~ .marker{
+    transform: translateX(calc((70px * 4) + 15px));
+    opacity: 1;
+    background-color: #0099ff;
+    box-shadow: 0 15px 25px #0099ff99;
+}
+
+/* ----- */
+
+.nav3 ul li:nth-child(1).active-item ~ .marker{
+    transform: translateX(calc((70px * 0) + 15px));
+    opacity: 1;
+    background-color: #00f7ff;
+    box-shadow: 0 15px 25px #00f7ff99;
+}
+
+.nav3 ul li:nth-child(2).active-item ~ .marker{
+    transform: translateX(calc((70px * 1) + 15px));
+    opacity: 1;
+    background-color: #ff1100;
+    box-shadow: 0 15px 25px #ff110099;
+}
+
+.nav3 ul li:nth-child(3).active-item ~ .marker{
+    transform: translateX(calc((70px * 2) + 15px));
+    opacity: 1;
+    background-color: #1100ff;
+    box-shadow: 0 15px 25px #1100ff99;
+}
+
+.nav3 ul li:nth-child(4).active-item ~ .marker{
+    transform: translateX(calc((70px * 3) + 15px));
+    opacity: 1;
+    background-color: #00ff00;
+    box-shadow: 0 15px 25px #00ff0099;
+}
+
+.nav3 ul li:nth-child(5).active-item ~ .marker{
+    transform: translateX(calc((70px * 4) + 15px));
+    opacity: 1;
+    background-color: #a200ff;
+    box-shadow: 0 15px 25px #a200ff99;
+}
+
+
+
+/* ----- */
+
+.nav4 ul li:nth-child(1).active-item ~ .marker{
+    transform: translateX(calc((70px * 0) + 15px));
+    opacity: 1;
+    background-color: #ff00ea;
+    box-shadow: 0 15px 25px #ff00ea99;
+}
+
+.nav4 ul li:nth-child(2).active-item ~ .marker{
+    transform: translateX(calc((70px * 1) + 15px));
+    opacity: 1;
+    background-color: #a200ff;
+    box-shadow: 0 15px 25px #a200ff99;
+}
+
+.nav4 ul li:nth-child(3).active-item ~ .marker{
+    transform: translateX(calc((70px * 2) + 15px));
+    opacity: 1;
+    background-color: #ff5e00;
+    box-shadow: 0 15px 25px #ff5e0099;
+}
+
+.nav4 ul li:nth-child(4).active-item ~ .marker{
+    transform: translateX(calc((70px * 3) + 15px));
+    opacity: 1;
+    background-color: #00b7ff;
+    box-shadow: 0 15px 25px #00b7ff99;
+}
+
+.nav4 ul li:nth-child(5).active-item ~ .marker{
+    transform: translateX(calc((70px * 4) + 15px));
+    opacity: 1;
+    background-color: #00ff4c;
+    box-shadow: 0 15px 25px #00ff4c99;
+}
