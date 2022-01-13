@@ -18,7 +18,3 @@ listItems.forEach((item) => {
     item.addEventListener('click',activateCurrentItem);
     item.addEventListener('click',() => console.log(this));
 })
-
-console.log(listItems[0].tagName);
-console.log(iconItems.tagName.srcElement);
-console.log(iconItems.parentElement.tagName);
