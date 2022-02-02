@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.headicon{
+    margin-bottom: -4px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    color: white;
+}
+
+p{
+    text-align: end;
+    font-size: 12px;
+    margin-right: 4rem;
+}
+
+p.namemark{
+    margin: 4rem;
+    color: white;
+    align-self: flex-end;
+    font-size: 0.9em;
+}
+
+.grid-div{
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+    transition-delay: 0.8s;
+}
+
+.grid-div.active{
+    height: 220px;
+    width: 220px;
+    transition-delay: 0s;
+}
+
+.grid-div .grid-item{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 6px;
+    width: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.6s;
+    transform: translate(calc(12px * var(--x)),calc(12px * var(--y)));
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.grid-div.active .grid-item{
+    position: absolute;
+    /* background-color: rgb(100, 100, 100); */
+    background-color: var(--databg);
+    height: 48px;
+    width: 48px;
+    transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+}
+
+.grid-div .grid-item ion-icon{
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.grid-div.active .grid-item ion-icon{
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+
+.grid-div .grid-item:hover ion-icon{
+    filter: drop-shadow(0 0 2px #dadada) drop-shadow(0 0 5px #dadada) drop-shadow(0 0 15px #dadada) ;
+}
