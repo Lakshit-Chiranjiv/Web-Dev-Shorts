@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: white;
+}
+
+p{
+    text-align: end;
+    font-size: 12px;
+    margin-right: 4rem;
+}
+
+p.namemark{
+    margin: 4rem;
+    color: white;
+    align-self: flex-end;
+    font-size: 1.1em;
+}
+
+.list-div{
+    background-color: rgb(66, 66, 66);
+    padding: 50px;
+    width: 400px;
+    min-height: 540px;
+    border-radius: 30px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.list-div h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.item::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 24px;
+    background-color: rgb(255, 121, 98);
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+    inset 2px 2px 5px rgba(255,255,255,0.25),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+    transition: all 0.4s;
+}
+
+.item:hover::before{
+    width: 100%;
+}
+
+.list-div .item .index{
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-div .item .index::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.4s;
+}
+
+.list-div .item:hover .index::before{
+    transform: scale(1);
+}
+
+.list-div .item .index span{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+}
+
+.list-div .item .details{
+    position: relative;
+    line-height: 1.15em;
+}
+
+.list-div .item .details h4{
+    font-weight: 600;
+    color: rgb(189, 188, 188);
+    transition: all 0.5s;
+}
+
+.list-div .item .details p{
+    font-weight: 400;
+    color: rgb(129, 129, 129);
+    font-size: 0.69em;
+    transition: all 0.5s;
+}
+
+.list-div .item:hover .details h4,.list-div .item:hover .details p{
+    color: rgb(255, 255, 255);
+}
