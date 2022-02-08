@@ -39,7 +39,6 @@ p.namemark{
 }
 
 .clock-div{
-    /* position: relative; */
     background: url(./../assets/clock.png);
     background-size: cover;
     display: flex;
@@ -89,7 +88,6 @@ p.namemark{
     justify-content: center;
     position: absolute;
     border-radius: 50%;
-    /* align-items: center; */
 }
 
 .hr::before{
@@ -121,45 +119,3 @@ p.namemark{
     z-index: 12;
     border-radius: 6px 6px 0 0;
 }
-
-/* .clock-mid{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 50%;
-    z-index: 100;
-    top: 48%;
-    left: 48%;
-}
-
-.hour .hr{
-    position: absolute;
-    background-color: red;
-    width: 10px;
-    height: 80px;
-    border-radius: 10px;
-    top: 25%;
-    left: 49.01%;
-}
-
-.minute .min{
-    position: absolute;
-    background-color: rgb(255, 214, 181);
-    width: 5px;
-    height: 120px;
-    border-radius: 10px;
-    top: 25%;
-    left: 49.6%;
-
-}
-
-.second .sec{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 2px;
-    height: 170px;
-    border-radius: 10px;
-    top: 20%;
-    left: 50%;
-} */
