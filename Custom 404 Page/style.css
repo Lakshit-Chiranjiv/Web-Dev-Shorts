@@ -106,3 +106,14 @@ body{
     bottom: 1em;
     transform: translate(-50%, 0%);
 }
+
+.dome{
+    height: 3em;
+    width: 7em;
+    background: linear-gradient(to bottom , #fea58d, #ffed88 50%, #74fc92 50%, #588af6);
+    border-radius: 4em 4em 0 0;
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    transform: translate(-50%, 0%);
+}
