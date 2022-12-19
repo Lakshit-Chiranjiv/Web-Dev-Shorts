@@ -48,3 +48,16 @@ body{
     top: 12em;
     transform: translate(-50%, 0%);
 }
+
+.tower::after{
+    content: "";
+    height: 0;
+    width: 8.05em;
+    border-bottom: 1.9em solid #f8a2a2;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 3em;
+    transform: translate(-50%, 0%);
+}
