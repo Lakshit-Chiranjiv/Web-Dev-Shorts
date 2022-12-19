@@ -72,3 +72,15 @@ body{
     bottom: 4em;
     transform: translate(-50%, 0%);
 }
+
+.door{
+    height: 3em;
+    width: 2.5em;
+    background-color: #4b4a4a;
+    border-radius: 1em 1em 0 0;
+    position: absolute;
+    left: 50%;
+    top: 16em;
+    transform: translate(-50%, 0%);
+    box-shadow: 0 -9em #4b4a4a;
+}
