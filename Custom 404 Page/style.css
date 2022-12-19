@@ -95,3 +95,14 @@ body{
     bottom: 0;
     transform: translate(-50%, 0%);
 }
+
+.lightbase::before{
+    content: "";
+    height: 1em;
+    width: 7em;
+    background-color: #fa5d5d;
+    position: absolute;
+    left: 50%;
+    bottom: 1em;
+    transform: translate(-50%, 0%);
+}
