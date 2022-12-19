@@ -84,3 +84,14 @@ body{
     transform: translate(-50%, 0%);
     box-shadow: 0 -9em #4b4a4a;
 }
+
+.lightbase{
+    height: 1em;
+    width: 10em;
+    background-color: #fd8b8b;
+    border-radius: 1em;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+}
