@@ -61,3 +61,14 @@ body{
     top: 3em;
     transform: translate(-50%, 0%);
 }
+
+.pole{
+    height: 3em;
+    width: 0.8em;
+    background-color: #fd8b8b;
+    border-radius: 0.5em 0.5em 0 0;
+    position: absolute;
+    left: 50%;
+    bottom: 4em;
+    transform: translate(-50%, 0%);
+}
