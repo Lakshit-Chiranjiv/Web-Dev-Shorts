@@ -168,3 +168,15 @@ p{
     letter-spacing: 3px;
     font-size: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .container{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        font-size: 12px;
+    }
+}
