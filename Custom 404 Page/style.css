@@ -6,13 +6,13 @@ body{
     color: white;
     text-align: center;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
     width: 21em;
     height: 32em;
     position: absolute;
-    border: 1px solid #fff;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 0%);
@@ -157,4 +157,14 @@ body{
     position: absolute;
     bottom: 6em;
     left: -6em;
+}
+
+h2{
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+
+p{
+    letter-spacing: 3px;
+    font-size: 26px;
 }
