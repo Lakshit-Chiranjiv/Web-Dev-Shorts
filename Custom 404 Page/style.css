@@ -145,3 +145,13 @@ body{
     left: 3.3em;
     box-shadow: 3.5em 0.62em 0 -0.62em #f9d71c;
 }
+
+.extrasand2{
+    height: 3em;
+    width: 7em;
+    border-radius: 8em 5em 0 0;
+    background-color: #f9d71c;
+    position: absolute;
+    bottom: 6em;
+    left: -6em;
+}
