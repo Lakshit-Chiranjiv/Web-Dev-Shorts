@@ -134,3 +134,14 @@ body{
         transform: translateX(-16em) rotateY(180deg);
     }
 }
+
+.extrasand{
+    height: 3em;
+    width: 4em;
+    border-radius: 50%;
+    background-color: #f9d71c;
+    position: absolute;
+    bottom: 1.6em;
+    left: 3.3em;
+    box-shadow: 3.5em 0.62em 0 -0.62em #f9d71c;
+}
