@@ -30,3 +30,9 @@ body{
     box-shadow: 5px 5px 10px 3px #dddddd;
 }
 
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
