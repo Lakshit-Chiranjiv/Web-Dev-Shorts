@@ -71,6 +71,10 @@ body{
     background-color: #f6ff00;
 }
 
+.card img{
+    margin: 0 auto;
+}
+
 
 .bg{
     position: absolute;
