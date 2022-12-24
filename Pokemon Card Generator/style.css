@@ -17,7 +17,7 @@ body{
 }
 
 .card{
-    min-width: 300px;
+    min-width: 400px;
     max-width: fit-content;
     padding: 40px;
     background-color: #fff;
@@ -28,6 +28,7 @@ body{
     -webkit-box-shadow: 5px 5px 10px 3px #dddddd;
     -moz-box-shadow: 5px 5px 10px 3px #dddddd;
     box-shadow: 5px 5px 10px 3px #dddddd;
+    z-index: -2;
 }
 
 .card-info{
@@ -68,4 +69,17 @@ body{
     font-size: 14px;
     font-weight: 700;
     background-color: #f6ff00;
+}
+
+
+.bg{
+    position: absolute;
+    width: 75%;
+    height: 200px;
+    background-color: greenyellow;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 180px 180px;
+    z-index: -1;
 }
