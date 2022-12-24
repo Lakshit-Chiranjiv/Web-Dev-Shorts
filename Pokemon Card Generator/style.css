@@ -47,7 +47,7 @@ body{
 .card-info div.stats{
     display: flex;
     justify-content: space-around;
-    gap: 32px;
+    gap: 48px;
 }
 
 #hp{
