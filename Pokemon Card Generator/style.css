@@ -7,3 +7,10 @@ body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
+
+.container{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f090;
+}
