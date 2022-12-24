@@ -13,15 +13,18 @@ body{
     min-width: 240px; */
     margin: 0 auto;
     padding: 30px;
-    background-color: #f5f090;
+    /* background-color: #f5f090; */
 }
 
 .card{
-    min-width: 240px;
+    min-width: 300px;
     max-width: fit-content;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px #00000033;
     margin: 0 auto;
     position: relative;
+    -webkit-box-shadow: 5px 5px 10px 3px #dddddd;
+    -moz-box-shadow: 5px 5px 10px 3px #dddddd;
+    box-shadow: 5px 5px 10px 3px #dddddd;
 }
