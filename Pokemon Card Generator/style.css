@@ -48,3 +48,15 @@ body{
     justify-content: space-around;
     gap: 32px;
 }
+
+#hp{
+    background-color: #ff0000;
+    padding: 12px;
+    border-radius: 24px;
+    border-width: 0;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
