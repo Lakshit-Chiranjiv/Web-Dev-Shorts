@@ -36,3 +36,15 @@ body{
     align-items: center;
     gap: 10px;
 }
+
+.card-info div.types{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.card-info div.stats{
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+}
