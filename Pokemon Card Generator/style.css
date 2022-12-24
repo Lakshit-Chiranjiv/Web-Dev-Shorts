@@ -87,3 +87,14 @@ body{
     border-radius: 0 0 180px 180px;
     z-index: -1;
 }
+
+button{
+    margin: 40px auto;
+    height: 40px;
+    width: 400px;
+    border-radius: 6px;
+    border-width: 0;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: white;
+}
