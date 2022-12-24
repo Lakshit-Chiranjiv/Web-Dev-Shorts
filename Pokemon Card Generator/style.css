@@ -60,3 +60,12 @@ body{
     font-size: 14px;
     font-weight: 700;
 }
+
+.types span{
+    padding: 8px 16px;
+    border-radius: 24px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f6ff00;
+}
