@@ -29,6 +29,7 @@ body{
     -moz-box-shadow: 5px 5px 10px 3px #dddddd;
     box-shadow: 5px 5px 10px 3px #dddddd;
     z-index: -2;
+    overflow: hidden;
 }
 
 .card-info{
@@ -78,13 +79,13 @@ body{
 
 .bg{
     position: absolute;
-    width: 75%;
+    width: 105%;
     height: 200px;
     background-color: greenyellow;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 0 0 180px 180px;
+    border-radius: 0 0 220px 220px;
     z-index: -1;
 }
 
