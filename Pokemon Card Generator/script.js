@@ -76,6 +76,8 @@ const typeColor = {
         </div>
         <span id="hp">HP: ${pokemonHp}</span>
     `
+    pokemonCard.innerHTML = pokemonHtml;
+
     pokemonTypes.forEach(type => {
         const typeEl = document.createElement("span");
         typeEl.innerText = type.type.name;
@@ -83,4 +85,14 @@ const typeColor = {
         pokemonCard.querySelector(".types").appendChild(typeEl);
     })
 
+    setCardBgColor(bgColor);
+
+  }
+
+  const setCardBgColor = (color) => {
+    pokemonCard.style.backgroundColor = color;
+    setTimeout(() => {
+        spinner.classList.add("hidden");
+        pokemonCard.classList.remove("hidden");
+    },5000)
   }
