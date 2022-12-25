@@ -37,3 +37,15 @@ const typeColor = {
     generatePokemonCard(data);
   }
 
+  const generatePokemonCard = (pokemonData) => {
+    const pokemonName = pokemonData.name[0].toUpperCase() + pokemonData.name.slice(1);
+    const pokemonId = pokemonData.id;
+    const pokemonImage = pokemonData.sprites.front_default;
+    const pokemonTypes = pokemonData.types;
+    const pokemonHp = pokemonData.stats[0].base_stat;
+    const pokemonAttack = pokemonData.stats[1].base_stat;
+    const pokemonDefense = pokemonData.stats[2].base_stat;
+    const pokemonSpeed = pokemonData.stats[5].base_stat;
+
+
+  }
