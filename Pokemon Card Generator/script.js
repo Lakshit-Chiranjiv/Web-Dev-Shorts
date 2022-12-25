@@ -17,3 +17,4 @@ const typeColor = {
     water: "#0190FF",
   };
 
+  const apiBaseUrl = " https://pokeapi.co/api/v2/pokemon/";
