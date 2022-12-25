@@ -46,6 +46,7 @@ const typeColor = {
     const pokemonAttack = pokemonData.stats[1].base_stat;
     const pokemonDefense = pokemonData.stats[2].base_stat;
     const pokemonSpeed = pokemonData.stats[5].base_stat;
+    const bgColor = typeColor[pokemonTypes[0].type.name];
 
     const pokemonHtml = `
         <div class="bg"></div>
