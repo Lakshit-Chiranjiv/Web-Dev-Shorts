@@ -186,3 +186,7 @@ a.btn{
        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
     }
  }
+
+ .hidden{
+    display: none;
+ }
