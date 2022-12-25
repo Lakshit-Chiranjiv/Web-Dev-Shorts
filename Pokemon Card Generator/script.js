@@ -42,12 +42,13 @@ const typeColor = {
     console.log(pokemonId)
     const response = await fetch(`${apiBaseUrl}${pokemonId}`);
     const data = await response.json();
-    generatePokemonCard(data);
+    generatePokemonCard(data, pokemonId);
   }
 
-  const generatePokemonCard = (pokemonData) => {
+  const generatePokemonCard = (pokemonData, pokemonId) => {
     const pokemonName = pokemonData.name[0].toUpperCase() + pokemonData.name.slice(1);
-    const pokemonImage = imageBaseUrl + pokemonData.id + ".svg";
+    const pokemonImage = "https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/"+pokemonId+".svg"
+    // const pokemonImage = imageBaseUrl + pokemonData.id + ".svg";
     const pokemonTypes = pokemonData.types;
     const pokemonHp = pokemonData.stats[0].base_stat;
     const pokemonAttack = pokemonData.stats[1].base_stat;
