@@ -24,6 +24,12 @@ const typeColor = {
   const spinner = document.querySelector(".spinner");
   const genBtn = document.querySelector(".btn");
 
+  window.onload = () => {
+    spinner.classList.remove("hidden");
+    pokemonCard.classList.add("hidden");
+    fetchPokemonData();
+  }
+
   genBtn.addEventListener("click", () => {
     spinner.classList.remove("hidden");
     pokemonCard.classList.add("hidden");
@@ -31,7 +37,9 @@ const typeColor = {
   });
 
   const fetchPokemonData = async () => {
-    const pokemonId = Math.floor(Math.random() * 898) + 1;
+    const pokemonId = Math.floor(Math.random() * 649) + 1;
+    //898
+    console.log(pokemonId)
     const response = await fetch(`${apiBaseUrl}${pokemonId}`);
     const data = await response.json();
     generatePokemonCard(data);
@@ -39,8 +47,7 @@ const typeColor = {
 
   const generatePokemonCard = (pokemonData) => {
     const pokemonName = pokemonData.name[0].toUpperCase() + pokemonData.name.slice(1);
-    const pokemonId = pokemonData.id;
-    const pokemonImage = pokemonData.sprites.front_default;
+    const pokemonImage = imageBaseUrl + pokemonData.id + ".svg";
     const pokemonTypes = pokemonData.types;
     const pokemonHp = pokemonData.stats[0].base_stat;
     const pokemonAttack = pokemonData.stats[1].base_stat;
@@ -90,7 +97,7 @@ const typeColor = {
   }
 
   const setCardBgColor = (color) => {
-    pokemonCard.style.backgroundColor = color;
+    document.querySelector('.bg').style.backgroundColor = color;
     setTimeout(() => {
         spinner.classList.add("hidden");
         pokemonCard.classList.remove("hidden");
