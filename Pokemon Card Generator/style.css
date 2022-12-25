@@ -190,3 +190,12 @@ a.btn{
  .hidden{
     display: none;
  }
+
+ #create{
+   margin: 40px auto;
+ }
+
+ #name{
+   text-decoration: none;
+   color: #56ffa2;
+ }
