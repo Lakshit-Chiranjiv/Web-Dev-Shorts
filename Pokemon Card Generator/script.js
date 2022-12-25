@@ -47,5 +47,39 @@ const typeColor = {
     const pokemonDefense = pokemonData.stats[2].base_stat;
     const pokemonSpeed = pokemonData.stats[5].base_stat;
 
+    const pokemonHtml = `
+        <div class="bg"></div>
+        <div class="card-image">
+            <img src=${pokemonImage} alt=${pokemonName}>
+        </div>
+        
+        <div class="card-info">
+            <h2>${pokemonName}</h2>
+            <div class="types">
+
+            </div>
+            <div class="stats">
+                <div>
+                    <p>Attack</p>
+                    <h3>${pokemonAttack}</h3>
+                </div>
+                <div>
+                    <p>Defense</p>
+                    <h3>${pokemonDefense}</h3>
+                </div>
+                <div>
+                    <p>Speed</p>
+                    <h3>${pokemonSpeed}</h3>
+                </div>
+            </div>
+        </div>
+        <span id="hp">HP: ${pokemonHp}</span>
+    `
+    pokemonTypes.forEach(type => {
+        const typeEl = document.createElement("span");
+        typeEl.innerText = type.type.name;
+        typeEl.style.backgroundColor = typeColor[type.type.name];
+        pokemonCard.querySelector(".types").appendChild(typeEl);
+    })
 
   }
