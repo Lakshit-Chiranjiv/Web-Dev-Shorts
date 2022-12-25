@@ -18,6 +18,7 @@ const typeColor = {
   };
 
   const apiBaseUrl = " https://pokeapi.co/api/v2/pokemon/";
+  const imageBaseUrl = "https://unpkg.com/browse/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/"
 
   const pokemonCard = document.querySelector(".card");
   const spinner = document.querySelector(".spinner");
@@ -35,3 +36,4 @@ const typeColor = {
     const data = await response.json();
     generatePokemonCard(data);
   }
+
