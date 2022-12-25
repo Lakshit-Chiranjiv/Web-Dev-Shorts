@@ -18,3 +18,7 @@ const typeColor = {
   };
 
   const apiBaseUrl = " https://pokeapi.co/api/v2/pokemon/";
+
+  const pokemonCard = document.querySelector(".card");
+  const spinner = document.querySelector(".spinner");
+  const genBtn = document.querySelector(".btn");
