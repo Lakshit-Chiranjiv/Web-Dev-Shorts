@@ -22,3 +22,16 @@ const typeColor = {
   const pokemonCard = document.querySelector(".card");
   const spinner = document.querySelector(".spinner");
   const genBtn = document.querySelector(".btn");
+
+  genBtn.addEventListener("click", () => {
+    spinner.classList.remove("hidden");
+    pokemonCard.classList.add("hidden");
+    fetchPokemonData();
+  });
+
+  const fetchPokemonData = async () => {
+    const pokemonId = Math.floor(Math.random() * 898) + 1;
+    const response = await fetch(`${apiBaseUrl}${pokemonId}`);
+    const data = await response.json();
+    generatePokemonCard(data);
+  }
