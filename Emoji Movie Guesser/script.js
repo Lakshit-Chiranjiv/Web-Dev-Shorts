@@ -1520,7 +1520,14 @@ const emojiMovies = [
       year: 2016,
     },
   ];
-
+//   {
+//     title: "500 Days of Summer",
+//     emojiImgs: "👦💔👱‍♀️☀️",
+//     genres: ["Comedy", "Romance", "Drama"],
+//     itemLink: "https://www.imdb.com/title/tt1022603/",
+//     type: "movie",
+//     year: 2009,
+//   },
 const generateRandomMovie = () => {
     const randomMovie =
         movieData[Math.floor(Math.random() * movieData.length)];
