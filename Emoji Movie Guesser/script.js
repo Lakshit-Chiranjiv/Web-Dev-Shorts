@@ -1520,3 +1520,9 @@ const emojiMovies = [
       year: 2016,
     },
   ];
+
+const generateRandomMovie = () => {
+    const randomMovie =
+        movieData[Math.floor(Math.random() * movieData.length)];
+    return randomMovie;
+}
