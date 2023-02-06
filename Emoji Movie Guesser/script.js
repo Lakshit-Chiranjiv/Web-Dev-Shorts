@@ -15,6 +15,7 @@ const generateRandomMovie = () => {
     return randomMovie;
 }
 
+let userGuess = "";
 inputBtns = document.querySelector(".inputBtns");
 
 // append buttons for A-Z and 0-9 in inputBtns div
@@ -22,6 +23,10 @@ for (let i = 65; i < 91; i++) {
     const btn = document.createElement("button");
     btn.classList.add("letterBtn");
     btn.innerText = String.fromCharCode(i);
+    btn.addEventListener("click", () => {
+        userGuess += btn.innerText;
+        console.log(userGuess);
+    })
     inputBtns.appendChild(btn);
 }
 
@@ -29,6 +34,10 @@ for (let i = 48; i < 58; i++) {
     const btn = document.createElement("button");
     btn.classList.add("numberBtn");
     btn.innerText = String.fromCharCode(i);
+    btn.addEventListener("click", () => {
+        userGuess += btn.innerText;
+        console.log(userGuess);
+    })
     inputBtns.appendChild(btn);
 }
 
