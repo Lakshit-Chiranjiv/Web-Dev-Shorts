@@ -23,6 +23,19 @@ const generateRandomMovie = () => {
 }
 
 let userGuess = "";
+const guess = document.querySelector("#guess");
+const generatedMovie = generateRandomMovie();
+const generatedMovieTitle = generatedMovie.title.toUpperCase(); 
+let guessString = "";
+let prevGuessString = "";
+for (let i = 0; i < generatedMovieTitle.length; i++) {
+    if (generatedMovieTitle[i] === " ") {
+        guessString += " ";
+    } else {
+        guessString += "_";
+    }
+}
+guess.innerText = guessString;
 inputBtns = document.querySelector(".inputBtns");
 
 // append buttons for A-Z and 0-9 in inputBtns div
@@ -36,7 +49,25 @@ for (let i = 65; i < 91; i++) {
         if(!userGuess.includes(btn.innerText)){
             userGuess += btn.innerText;
         }
-        console.log("userGuess",userGuess);
+        prevGuessString = guessString;
+        guessString = ""
+        for (let i = 0; i < generatedMovieTitle.length; i++) {
+            if (generatedMovieTitle[i] === btn.innerText) {
+                guessString += btn.innerText;
+            }
+            else if (generatedMovieTitle[i] === " ") {
+                guessString += " ";
+            }
+            else {
+                if (prevGuessString[i] !== "_") {
+                    guessString += prevGuessString[i];
+                }
+                else {
+                    guessString += "_";
+                }
+            }
+        }
+        guess.innerText = guessString;
     })
 }
 
@@ -50,20 +81,27 @@ for (let i = 48; i < 58; i++) {
         if(!userGuess.includes(btn.innerText)){
             userGuess += btn.innerText;
         }
-        console.log("userGuess",userGuess);
+        prevGuessString = guessString;
+        guessString = ""
+        for (let i = 0; i < generatedMovieTitle.length; i++) {
+            if (generatedMovieTitle[i] === btn.innerText) {
+                guessString += btn.innerText;
+            }
+            else if (generatedMovieTitle[i] === " ") {
+                guessString += " ";
+            }
+            else {
+                if (prevGuessString[i] !== "_") {
+                    guessString += prevGuessString[i];
+                }
+                else {
+                    guessString += "_";
+                }
+            }
+        }
+        guess.innerText = guessString;
     })
 }
 
-const guess = document.querySelector("#guess");
-const generatedMovie = generateRandomMovie();
-console.log("generatedMovie", generatedMovie);
-const generatedMovieTitle = generatedMovie.title;
-let guessString = "";
-for (let i = 0; i < generatedMovieTitle.length; i++) {
-    if (generatedMovieTitle[i] === " ") {
-        guessString += " ";
-    } else {
-        guessString += "_";
-    }
-}
-guess.innerText = guessString;
+
+
