@@ -1,5 +1,12 @@
 const movieData = [
-
+  {
+    title: "500 Days of Summer",
+    emojiImgs: "👦💔👱‍♀️☀️",
+    genres: ["Comedy", "Romance", "Drama"],
+    itemLink: "https://www.imdb.com/title/tt1022603/",
+    type: "movie",
+    year: 2009,
+  },
 ]
 //   {
 //     title: "500 Days of Summer",
@@ -46,3 +53,17 @@ for (let i = 48; i < 58; i++) {
         console.log("userGuess",userGuess);
     })
 }
+
+const guess = document.querySelector("#guess");
+const generatedMovie = generateRandomMovie();
+console.log("generatedMovie", generatedMovie);
+const generatedMovieTitle = generatedMovie.title;
+let guessString = "";
+for (let i = 0; i < generatedMovieTitle.length; i++) {
+    if (generatedMovieTitle[i] === " ") {
+        guessString += " ";
+    } else {
+        guessString += "_";
+    }
+}
+guess.innerText = guessString;
