@@ -22,22 +22,27 @@ inputBtns = document.querySelector(".inputBtns");
 for (let i = 65; i < 91; i++) {
     const btn = document.createElement("button");
     btn.classList.add("letterBtn");
+    btn.classList.add("btn");
     btn.innerText = String.fromCharCode(i);
-    btn.addEventListener("click", () => {
-        userGuess += btn.innerText;
-        console.log(userGuess);
-    })
     inputBtns.appendChild(btn);
+    btn.addEventListener("click", () => {
+        if(!userGuess.includes(btn.innerText)){
+            userGuess += btn.innerText;
+        }
+        console.log("userGuess",userGuess);
+    })
 }
 
 for (let i = 48; i < 58; i++) {
     const btn = document.createElement("button");
     btn.classList.add("numberBtn");
+    btn.classList.add("btn");
     btn.innerText = String.fromCharCode(i);
-    btn.addEventListener("click", () => {
-        userGuess += btn.innerText;
-        console.log(userGuess);
-    })
     inputBtns.appendChild(btn);
+    btn.addEventListener("click", () => {
+        if(!userGuess.includes(btn.innerText)){
+            userGuess += btn.innerText;
+        }
+        console.log("userGuess",userGuess);
+    })
 }
-
