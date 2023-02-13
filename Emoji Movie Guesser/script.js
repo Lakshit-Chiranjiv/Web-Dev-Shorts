@@ -22,10 +22,6 @@ const generateRandomMovie = () => {
     return randomMovie;
 }
 
-let clickedLetters = new Array(26).fill(0);
-
-let clickedNumbers = new Array(10).fill(0);
-
 let userGuess = "";
 let tries = 10;
 const triesText = document.querySelector("#tries");
@@ -53,6 +49,8 @@ for (let i = 65; i < 91; i++) {
     btn.innerText = String.fromCharCode(i);
     inputBtns.appendChild(btn);
     btn.addEventListener("click", () => {
+        btn.disabled = true;
+
         if(!userGuess.includes(btn.innerText)){
             userGuess += btn.innerText;
         }
@@ -89,6 +87,7 @@ for (let i = 48; i < 58; i++) {
     btn.innerText = String.fromCharCode(i);
     inputBtns.appendChild(btn);
     btn.addEventListener("click", () => {
+        btn.disabled = true;
         if(!userGuess.includes(btn.innerText)){
             userGuess += btn.innerText;
         }
