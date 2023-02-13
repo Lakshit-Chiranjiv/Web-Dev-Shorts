@@ -28,10 +28,12 @@ body{
     -webkit-box-shadow: 5px 5px 10px 3px #3dc3fc;
     -moz-box-shadow: 5px 5px 10px 3px #3dc3fc;
     box-shadow: 5px 5px 10px 3px #3dc3fc;
-    z-index: -2;
     overflow: hidden;
 }
 
+.btn{
+   cursor: pointer;
+}
 
    /* loader */
 
