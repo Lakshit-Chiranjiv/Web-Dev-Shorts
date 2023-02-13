@@ -26,6 +26,7 @@ let userGuess = "";
 let tries = 10;
 const triesText = document.querySelector("#tries");
 triesText.innerText = tries;
+const result = document.querySelector("#result");
 const guess = document.querySelector("#guess");
 const generatedMovie = generateRandomMovie();
 const generatedMovieTitle = generatedMovie.title.toUpperCase(); 
@@ -57,6 +58,9 @@ for (let i = 65; i < 91; i++) {
         if(!generatedMovieTitle.includes(btn.innerText)){
             tries--;
             triesText.innerText = tries;
+            if(tries === 0){
+                result.innerText = "You Lose!";
+            }
         }
         prevGuessString = guessString;
         guessString = ""
@@ -77,6 +81,9 @@ for (let i = 65; i < 91; i++) {
             }
         }
         guess.innerText = guessString;
+        if(guessString === generatedMovieTitle){
+            result.innerText = "You Win!";
+        }
     })
 }
 
@@ -94,6 +101,9 @@ for (let i = 48; i < 58; i++) {
         if(!generatedMovieTitle.includes(btn.innerText)){
             tries--;
             triesText.innerText = tries;
+            if(tries === 0){
+                result.innerText = "You Lose!";
+            }
         }
         prevGuessString = guessString;
         guessString = ""
@@ -114,6 +124,9 @@ for (let i = 48; i < 58; i++) {
             }
         }
         guess.innerText = guessString;
+        if(guessString === generatedMovieTitle){
+            result.innerText = "You Win!";
+        }
     })
 }
 
