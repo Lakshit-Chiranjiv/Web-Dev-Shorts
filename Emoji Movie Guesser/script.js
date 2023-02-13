@@ -52,6 +52,10 @@ for (let i = 65; i < 91; i++) {
         if(!userGuess.includes(btn.innerText)){
             userGuess += btn.innerText;
         }
+        if(!generatedMovieTitle.includes(btn.innerText)){
+            tries--;
+            triesText.innerText = tries;
+        }
         prevGuessString = guessString;
         guessString = ""
         for (let i = 0; i < generatedMovieTitle.length; i++) {
@@ -83,6 +87,10 @@ for (let i = 48; i < 58; i++) {
     btn.addEventListener("click", () => {
         if(!userGuess.includes(btn.innerText)){
             userGuess += btn.innerText;
+        }
+        if(!generatedMovieTitle.includes(btn.innerText)){
+            tries--;
+            triesText.innerText = tries;
         }
         prevGuessString = guessString;
         guessString = ""
