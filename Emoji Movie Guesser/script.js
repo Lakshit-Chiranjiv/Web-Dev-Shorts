@@ -23,6 +23,9 @@ const generateRandomMovie = () => {
 }
 
 let userGuess = "";
+let tries = 10;
+const triesText = document.querySelector("#tries");
+triesText.innerText = tries;
 const guess = document.querySelector("#guess");
 const generatedMovie = generateRandomMovie();
 const generatedMovieTitle = generatedMovie.title.toUpperCase(); 
