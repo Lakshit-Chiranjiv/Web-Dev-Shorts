@@ -22,6 +22,10 @@ const generateRandomMovie = () => {
     return randomMovie;
 }
 
+let clickedLetters = new Array(26).fill(0);
+
+let clickedNumbers = new Array(10).fill(0);
+
 let userGuess = "";
 let tries = 10;
 const triesText = document.querySelector("#tries");
