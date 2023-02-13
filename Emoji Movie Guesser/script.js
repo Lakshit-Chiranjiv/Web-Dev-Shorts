@@ -131,4 +131,9 @@ for (let i = 48; i < 58; i++) {
 }
 
 
-
+// TODO:
+// 1. Next Movie Button functionality
+// 2. Add movies to movieData array
+// 3. Add emoji rendering functionality
+// 4. Put all the game events in a function and call it when the page loads
+// 5. Conditional rendering the gameplay buttons and the result text
