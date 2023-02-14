@@ -39,10 +39,6 @@ body{
    cursor: not-allowed;
 }
 
-.hidden{
-   display: none;
-}
-
    /* loader */
 
    .spinner {
