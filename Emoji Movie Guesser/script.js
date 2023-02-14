@@ -34,7 +34,10 @@ const emojisPara = document.querySelector('#emo')
 const result = document.querySelector("#result");
 const guess = document.querySelector("#guess");
 
-inputBtns = document.querySelector(".inputBtns");
+const emojiDiv = document.querySelector(".emoji");
+const guessingDiv = document.querySelector(".guessing");
+const inputBtns = document.querySelector(".inputBtns");
+const resultDiv = document.querySelector(".result");
 
 // append buttons for A-Z and 0-9 in inputBtns div
 for (let i = 65; i < 91; i++) {
@@ -160,7 +163,7 @@ nextMovieBtn.addEventListener("click", () => {
 
 
 // TODO:
-// 1. Next Movie Button functionality
+// 1. Next Movie Button functionality --- X
 // 2. Add movies to movieData array
 // 3. Add emoji rendering functionality --- X
 // 4. Put all the game events in a function and call it when the page loads --- X
