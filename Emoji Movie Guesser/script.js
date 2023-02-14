@@ -41,92 +41,96 @@ const resultDiv = document.querySelector(".result");
 const spinner = document.querySelector(".spinner");
 const card = document.querySelector(".card");
 
-// append buttons for A-Z and 0-9 in inputBtns div
-for (let i = 65; i < 91; i++) {
-    const btn = document.createElement("button");
-    btn.classList.add("letterBtn");
-    btn.classList.add("btn");
-    btn.innerText = String.fromCharCode(i);
-    inputBtns.appendChild(btn);
-    btn.addEventListener("click", () => {
-        btn.disabled = true;
+const renderButtons = () => {
 
-        if(!userGuess.includes(btn.innerText)){
-            userGuess += btn.innerText;
-        }
-        if(!generatedMovieTitle.includes(btn.innerText)){
-            tries--;
-            triesText.innerText = tries;
-            if(tries === 0){
-                result.innerText = "You Lose!";
+    // append buttons for A-Z and 0-9 in inputBtns div
+    for (let i = 65; i < 91; i++) {
+        const btn = document.createElement("button");
+        btn.classList.add("letterBtn");
+        btn.classList.add("btn");
+        btn.innerText = String.fromCharCode(i);
+        inputBtns.appendChild(btn);
+        btn.addEventListener("click", () => {
+            btn.disabled = true;
+
+            if(!userGuess.includes(btn.innerText)){
+                userGuess += btn.innerText;
             }
-        }
-        prevGuessString = guessString;
-        guessString = ""
-        for (let i = 0; i < generatedMovieTitle.length; i++) {
-            if (generatedMovieTitle[i] === btn.innerText) {
-                guessString += btn.innerText;
+            if(!generatedMovieTitle.includes(btn.innerText)){
+                tries--;
+                triesText.innerText = tries;
+                if(tries === 0){
+                    result.innerText = "You Lose!";
+                }
             }
-            else if (generatedMovieTitle[i] === " ") {
-                guessString += " ";
-            }
-            else {
-                if (prevGuessString[i] !== "_") {
-                    guessString += prevGuessString[i];
+            prevGuessString = guessString;
+            guessString = ""
+            for (let i = 0; i < generatedMovieTitle.length; i++) {
+                if (generatedMovieTitle[i] === btn.innerText) {
+                    guessString += btn.innerText;
+                }
+                else if (generatedMovieTitle[i] === " ") {
+                    guessString += " ";
                 }
                 else {
-                    guessString += "_";
+                    if (prevGuessString[i] !== "_") {
+                        guessString += prevGuessString[i];
+                    }
+                    else {
+                        guessString += "_";
+                    }
                 }
             }
-        }
-        guess.innerText = guessString;
-        if(guessString === generatedMovieTitle){
-            result.innerText = "You Win!";
-        }
-    })
-}
+            guess.innerText = guessString;
+            if(guessString === generatedMovieTitle){
+                result.innerText = "You Win!";
+            }
+        })
+    }
 
-for (let i = 48; i < 58; i++) {
-    const btn = document.createElement("button");
-    btn.classList.add("numberBtn");
-    btn.classList.add("btn");
-    btn.innerText = String.fromCharCode(i);
-    inputBtns.appendChild(btn);
-    btn.addEventListener("click", () => {
-        btn.disabled = true;
-        if(!userGuess.includes(btn.innerText)){
-            userGuess += btn.innerText;
-        }
-        if(!generatedMovieTitle.includes(btn.innerText)){
-            tries--;
-            triesText.innerText = tries;
-            if(tries === 0){
-                result.innerText = "You Lose!";
+    for (let i = 48; i < 58; i++) {
+        const btn = document.createElement("button");
+        btn.classList.add("numberBtn");
+        btn.classList.add("btn");
+        btn.innerText = String.fromCharCode(i);
+        inputBtns.appendChild(btn);
+        btn.addEventListener("click", () => {
+            btn.disabled = true;
+            if(!userGuess.includes(btn.innerText)){
+                userGuess += btn.innerText;
             }
-        }
-        prevGuessString = guessString;
-        guessString = ""
-        for (let i = 0; i < generatedMovieTitle.length; i++) {
-            if (generatedMovieTitle[i] === btn.innerText) {
-                guessString += btn.innerText;
+            if(!generatedMovieTitle.includes(btn.innerText)){
+                tries--;
+                triesText.innerText = tries;
+                if(tries === 0){
+                    result.innerText = "You Lose!";
+                }
             }
-            else if (generatedMovieTitle[i] === " ") {
-                guessString += " ";
-            }
-            else {
-                if (prevGuessString[i] !== "_") {
-                    guessString += prevGuessString[i];
+            prevGuessString = guessString;
+            guessString = ""
+            for (let i = 0; i < generatedMovieTitle.length; i++) {
+                if (generatedMovieTitle[i] === btn.innerText) {
+                    guessString += btn.innerText;
+                }
+                else if (generatedMovieTitle[i] === " ") {
+                    guessString += " ";
                 }
                 else {
-                    guessString += "_";
+                    if (prevGuessString[i] !== "_") {
+                        guessString += prevGuessString[i];
+                    }
+                    else {
+                        guessString += "_";
+                    }
                 }
             }
-        }
-        guess.innerText = guessString;
-        if(guessString === generatedMovieTitle){
-            result.innerText = "You Win!";
-        }
-    })
+            guess.innerText = guessString;
+            if(guessString === generatedMovieTitle){
+                result.innerText = "You Win!";
+            }
+        })
+    }
+
 }
 
 const startGame = () => {
@@ -162,6 +166,7 @@ window.onload = () => {
     card.classList.add("hidden");
     nextMovieBtn.classList.add("hidden");
     startGame();
+    renderButtons();
     setTimeout(() => {
         spinner.classList.add("hidden");
         card.classList.remove("hidden");
