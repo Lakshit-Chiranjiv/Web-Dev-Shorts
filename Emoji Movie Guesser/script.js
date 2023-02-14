@@ -34,25 +34,6 @@ const emojisPara = document.querySelector('#emo')
 const result = document.querySelector("#result");
 const guess = document.querySelector("#guess");
 
-const startGame = () => {
-    tries = 10;
-    triesText.innerText = tries;
-    generatedMovie = generateRandomMovie();
-    generatedMovieTitle = generatedMovie.title.toUpperCase(); 
-    guessString = "";
-    prevGuessString = "";
-    for (let i = 0; i < generatedMovieTitle.length; i++) {
-        if (generatedMovieTitle[i] === " ") {
-            guessString += " ";
-        } else {
-            guessString += "_";
-        }
-    }
-    emojisPara.innerText = generatedMovie.emojiImgs;
-    guess.innerText = guessString;
-}
-
-
 inputBtns = document.querySelector(".inputBtns");
 
 // append buttons for A-Z and 0-9 in inputBtns div
@@ -142,6 +123,40 @@ for (let i = 48; i < 58; i++) {
         }
     })
 }
+
+const startGame = () => {
+    tries = 10;
+    triesText.innerText = tries;
+    generatedMovie = generateRandomMovie();
+    generatedMovieTitle = generatedMovie.title.toUpperCase(); 
+    guessString = "";
+    prevGuessString = "";
+    for (let i = 0; i < generatedMovieTitle.length; i++) {
+        if (generatedMovieTitle[i] === " ") {
+            guessString += " ";
+        } else {
+            guessString += "_";
+        }
+    }
+    emojisPara.innerText = generatedMovie.emojiImgs;
+    guess.innerText = guessString;
+    result.innerText = "";
+
+    // enable all the disabled buttons
+    const disabledBtns = document.querySelectorAll(".btn:disabled");
+    disabledBtns.forEach((btn) => {
+        btn.disabled = false;
+    })
+}
+
+
+
+
+window.onload = startGame();
+const nextMovieBtn = document.querySelector("#next-btn");
+nextMovieBtn.addEventListener("click", () => {
+    startGame();
+})
 
 
 // TODO:
