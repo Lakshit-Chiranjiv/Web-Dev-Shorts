@@ -38,6 +38,8 @@ const emojiDiv = document.querySelector(".emoji");
 const guessingDiv = document.querySelector(".guessing");
 const inputBtns = document.querySelector(".inputBtns");
 const resultDiv = document.querySelector(".result");
+const spinner = document.querySelector(".spinner");
+const card = document.querySelector(".card");
 
 // append buttons for A-Z and 0-9 in inputBtns div
 for (let i = 65; i < 91; i++) {
@@ -153,12 +155,30 @@ const startGame = () => {
 }
 
 
-
-
-window.onload = startGame();
 const nextMovieBtn = document.querySelector("#next-btn");
-nextMovieBtn.addEventListener("click", () => {
+
+window.onload = () => {
+    spinner.classList.remove("hidden");
+    card.classList.add("hidden");
+    nextMovieBtn.classList.add("hidden");
     startGame();
+    setTimeout(() => {
+        spinner.classList.add("hidden");
+        card.classList.remove("hidden");
+        nextMovieBtn.classList.remove("hidden");
+    }, 3000)
+}
+
+nextMovieBtn.addEventListener("click", () => {
+    spinner.classList.remove("hidden");
+    card.classList.add("hidden");
+    nextMovieBtn.classList.add("hidden");
+    startGame();
+    setTimeout(() => {
+        spinner.classList.add("hidden");
+        card.classList.remove("hidden");
+        nextMovieBtn.classList.remove("hidden");
+    }, 3000)
 })
 
 
