@@ -24,26 +24,35 @@ const generateRandomMovie = () => {
 
 let userGuess = "";
 let tries = 10;
-const triesText = document.querySelector("#tries");
-triesText.innerText = tries;
+let generatedMovie;
+let generatedMovieTitle; 
+let guessString = "";
+let prevGuessString = "";
 
+const triesText = document.querySelector("#tries");
 const emojisPara = document.querySelector('#emo')
 const result = document.querySelector("#result");
 const guess = document.querySelector("#guess");
-const generatedMovie = generateRandomMovie();
-const generatedMovieTitle = generatedMovie.title.toUpperCase(); 
-let guessString = "";
-let prevGuessString = "";
-for (let i = 0; i < generatedMovieTitle.length; i++) {
-    if (generatedMovieTitle[i] === " ") {
-        guessString += " ";
-    } else {
-        guessString += "_";
+
+const startGame = () => {
+    tries = 10;
+    triesText.innerText = tries;
+    generatedMovie = generateRandomMovie();
+    generatedMovieTitle = generatedMovie.title.toUpperCase(); 
+    guessString = "";
+    prevGuessString = "";
+    for (let i = 0; i < generatedMovieTitle.length; i++) {
+        if (generatedMovieTitle[i] === " ") {
+            guessString += " ";
+        } else {
+            guessString += "_";
+        }
     }
+    emojisPara.innerText = generatedMovie.emojiImgs;
+    guess.innerText = guessString;
 }
 
-emojisPara.innerText = generatedMovie.emojiImgs;
-guess.innerText = guessString;
+
 inputBtns = document.querySelector(".inputBtns");
 
 // append buttons for A-Z and 0-9 in inputBtns div
@@ -138,6 +147,6 @@ for (let i = 48; i < 58; i++) {
 // TODO:
 // 1. Next Movie Button functionality
 // 2. Add movies to movieData array
-// 3. Add emoji rendering functionality
-// 4. Put all the game events in a function and call it when the page loads
+// 3. Add emoji rendering functionality --- X
+// 4. Put all the game events in a function and call it when the page loads --- X
 // 5. Conditional rendering the gameplay buttons and the result text
