@@ -26,6 +26,8 @@ let userGuess = "";
 let tries = 10;
 const triesText = document.querySelector("#tries");
 triesText.innerText = tries;
+
+const emojisPara = document.querySelector('#emo')
 const result = document.querySelector("#result");
 const guess = document.querySelector("#guess");
 const generatedMovie = generateRandomMovie();
@@ -39,6 +41,8 @@ for (let i = 0; i < generatedMovieTitle.length; i++) {
         guessString += "_";
     }
 }
+
+emojisPara.innerText = generatedMovie.emojiImgs;
 guess.innerText = guessString;
 inputBtns = document.querySelector(".inputBtns");
 
