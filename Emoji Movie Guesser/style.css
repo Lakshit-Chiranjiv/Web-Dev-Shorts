@@ -82,3 +82,18 @@ body{
  .hidden{
     display: none;
  }
+
+.card{
+      min-width: 400px;
+      max-width: fit-content;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000033;
+      margin: 0 auto;
+      position: relative;
+      -webkit-box-shadow: 5px 5px 10px 3px #3dc3fc;
+      -moz-box-shadow: 5px 5px 10px 3px #3dc3fc;
+      box-shadow: 5px 5px 10px 3px #3dc3fc;
+      overflow: hidden;
+}
