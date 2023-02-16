@@ -97,3 +97,16 @@ body{
       box-shadow: 5px 5px 10px 3px #3dc3fc;
       overflow: hidden;
 }
+
+#tries{
+   font-size: 20px;
+   font-weight: 600;
+   color: #474bff;
+}
+
+#tryP{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   margin-bottom: 10px;
+}
