@@ -1749,11 +1749,4 @@ nextMovieBtn.addEventListener("click", () => {
         nextMovieBtn.classList.remove("hidden");
     }, 3000)
 })
-
-
-// TODO:
-// 1. Next Movie Button functionality --- X
-// 2. Add movies to movieData array
-// 3. Add emoji rendering functionality --- X
-// 4. Put all the game events in a function and call it when the page loads --- X
-// 5. Conditional rendering the gameplay buttons and the result text
+console.log("hello world")
