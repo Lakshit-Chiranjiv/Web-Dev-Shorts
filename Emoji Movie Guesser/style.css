@@ -240,6 +240,7 @@ body{
    #next-btn{
       padding: 8px 50px;
       font-size: 14px;
+      font-family: 'Poppins', sans-serif;
    }
 
    .emoji{
@@ -265,5 +266,6 @@ body{
 
    .inputBtns, .guessing{
       margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
    }
 }
