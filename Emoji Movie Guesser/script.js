@@ -67,6 +67,8 @@ const renderButtons = () => {
                 triesText.innerText = tries;
                 if(tries === 0){
                     result.innerText = "You Lose!";
+                    result.classList.add("lose");
+                    result.classList.remove("win");
                 }
             }
             prevGuessString = guessString;
@@ -90,6 +92,8 @@ const renderButtons = () => {
             guess.innerText = guessString;
             if(guessString === generatedMovieTitle){
                 result.innerText = "You Win!";
+                result.classList.add("win");
+                result.classList.remove("lose");
             }
         })
     }
