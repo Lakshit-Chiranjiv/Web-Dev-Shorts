@@ -141,3 +141,7 @@ body{
 .btn:active{
    transform: scale(0.95);
 }
+
+.inputBtns{
+   margin-bottom: 20px;
+}
