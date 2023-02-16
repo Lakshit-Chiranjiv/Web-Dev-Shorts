@@ -184,3 +184,29 @@ body{
 .lose{
    background: linear-gradient(to right,#ca1919 ,#e03333);
 }
+
+#next-btn{
+   margin-top: 20px;
+   background: linear-gradient(to right,#3b96ff ,#000000);
+   background-color: #3b96ff;
+   color: #ffffff;
+   font-family: Trebuchet MS;
+   font-size: 18px;
+   font-weight: 800;
+   font-style: normal;
+   text-decoration: none;
+   padding: 12px 70px;
+   border: 0px solid #000;
+   border-radius: 6px;
+   display: inline-block;
+   cursor: pointer;
+}
+
+#next-btn:hover{
+   background: linear-gradient(to right,#62a4ff ,#515151);
+   background-color: #62a4ff;
+}
+
+#next-btn:active{
+   transform: scale(0.95);
+}
