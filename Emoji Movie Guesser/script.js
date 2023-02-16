@@ -69,6 +69,12 @@ const renderButtons = () => {
                     result.innerText = "You Lose!";
                     result.classList.add("lose");
                     result.classList.remove("win");
+
+                    // disable all the buttons
+                    const enabledBtns = document.querySelectorAll(".btn:not(:disabled)");
+                    enabledBtns.forEach((btn) => {
+                        btn.disabled = true;
+                    })
                 }
             }
             prevGuessString = guessString;
