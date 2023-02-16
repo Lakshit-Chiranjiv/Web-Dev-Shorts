@@ -66,6 +66,7 @@ const renderButtons = () => {
                 tries--;
                 triesText.innerText = tries;
                 if(tries === 0){
+                    resultDiv.classList.remove("hidden");
                     result.innerText = "You Lose!";
                     result.classList.add("lose");
                     result.classList.remove("win");
@@ -97,9 +98,16 @@ const renderButtons = () => {
             }
             guess.innerText = guessString;
             if(guessString === generatedMovieTitle){
+                resultDiv.classList.remove("hidden");
                 result.innerText = "You Win!";
                 result.classList.add("win");
                 result.classList.remove("lose");
+
+                // disable all the buttons
+                const enabledBtns = document.querySelectorAll(".btn:not(:disabled)");
+                enabledBtns.forEach((btn) => {
+                    btn.disabled = true;
+                })
             }
         })
     }
@@ -121,7 +129,16 @@ const renderButtons = () => {
                 tries--;
                 triesText.innerText = tries;
                 if(tries === 0){
+                    resultDiv.classList.remove("hidden");
                     result.innerText = "You Lose!";
+                    result.classList.add("lose");
+                    result.classList.remove("win");
+
+                    // disable all the buttons
+                    const enabledBtns = document.querySelectorAll(".btn:not(:disabled)");
+                    enabledBtns.forEach((btn) => {
+                        btn.disabled = true;
+                    })
                 }
             }
             prevGuessString = guessString;
@@ -144,7 +161,16 @@ const renderButtons = () => {
             }
             guess.innerText = guessString;
             if(guessString === generatedMovieTitle){
+                resultDiv.classList.remove("hidden");
                 result.innerText = "You Win!";
+                result.classList.add("win");
+                result.classList.remove("lose");
+
+                // disable all the buttons
+                const enabledBtns = document.querySelectorAll(".btn:not(:disabled)");
+                enabledBtns.forEach((btn) => {
+                    btn.disabled = true;
+                })
             }
         })
     }
@@ -168,6 +194,8 @@ const startGame = () => {
     emojisPara.innerText = generatedMovie.emojiImgs;
     guess.innerText = guessString;
     result.innerText = "";
+    //hide result div
+    resultDiv.classList.add("hidden");
 
     // enable all the disabled buttons
     const disabledBtns = document.querySelectorAll(".btn:disabled");
