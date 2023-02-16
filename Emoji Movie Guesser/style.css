@@ -167,3 +167,20 @@ body{
    color: #474bff;
    letter-spacing: 1px;
 }
+
+#result{
+   font-size: 20px;
+   font-weight: 600;
+   color: #fff;
+   letter-spacing: 3px;
+   padding: 10px 0;
+   border-radius: 10px;
+}
+
+.win{
+   background: linear-gradient(to right,#19ca4e ,#33e081);
+}
+
+.lose{
+   background: linear-gradient(to right,#ca1919 ,#e03333);
+}
