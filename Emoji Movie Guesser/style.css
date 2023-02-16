@@ -142,6 +142,21 @@ body{
    transform: scale(0.95);
 }
 
+.btn:disabled,
+.btn[disabled]{
+   background: linear-gradient(to right,#a4a4a4 ,#000000);
+   background-color: #a4a4a4;
+}
+
+.btn:disabled:hover{
+   background: linear-gradient(to right,#a4a4a4 ,#000000);
+   background-color: #a4a4a4;
+}
+
+.btn:disabled:active{
+   transform: scale(1);
+}
+
 .inputBtns, .guessing{
    margin-bottom: 20px;
 }
