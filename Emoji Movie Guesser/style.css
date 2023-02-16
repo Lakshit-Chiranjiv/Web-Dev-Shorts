@@ -115,3 +115,29 @@ body{
    font-size: 40px;
    margin-bottom: 20px;
 }
+
+.btn{
+   cursor: pointer;
+   background: linear-gradient(to right,#196BCA ,#6433E0);
+   background-color: #196BCA;
+   color: #fff;
+   font-family: Trebuchet MS;
+   font-size: 18px;
+   font-weight: 800;
+   font-style: normal;
+   text-decoration: none;
+   padding: 12px 16px;
+   border: 0px solid #000;
+   border-radius: 6px;
+   display: inline-block;
+   margin: 4px 2px;
+}
+
+.btn:hover{
+   background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+   background-color: #5482d0;
+}
+
+.btn:active{
+   transform: scale(0.95);
+}
