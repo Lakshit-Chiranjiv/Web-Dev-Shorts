@@ -1706,6 +1706,7 @@ const startGame = () => {
             guessString += "_";
         }
     }
+    ans.innerText = "";
     emojisPara.innerText = generatedMovie.emojiImgs;
     guess.innerText = guessString;
     result.innerText = "";
