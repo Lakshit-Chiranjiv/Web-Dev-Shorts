@@ -1724,12 +1724,14 @@ const startGame = () => {
 const nextMovieBtn = document.querySelector("#next-btn");
 
 window.onload = () => {
+    console.log('window load')
     spinner.classList.remove("hidden");
     card.classList.add("hidden");
     nextMovieBtn.classList.add("hidden");
     startGame();
     renderButtons();
     setTimeout(() => {
+        console.log('timeout')
         spinner.classList.add("hidden");
         card.classList.remove("hidden");
         nextMovieBtn.classList.remove("hidden");
