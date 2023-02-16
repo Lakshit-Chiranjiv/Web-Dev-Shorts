@@ -1723,18 +1723,18 @@ const startGame = () => {
 
 const nextMovieBtn = document.querySelector("#next-btn");
 
-window.onload = () => {
-    spinner.classList.remove("hidden");
-    card.classList.add("hidden");
-    nextMovieBtn.classList.add("hidden");
-    startGame();
-    renderButtons();
-    setTimeout(() => {
-        spinner.classList.add("hidden");
-        card.classList.remove("hidden");
-        nextMovieBtn.classList.remove("hidden");
-    }, 3000)
-}
+// window.onload = () => {
+//     spinner.classList.remove("hidden");
+//     card.classList.add("hidden");
+//     nextMovieBtn.classList.add("hidden");
+//     startGame();
+//     renderButtons();
+//     setTimeout(() => {
+//         spinner.classList.add("hidden");
+//         card.classList.remove("hidden");
+//         nextMovieBtn.classList.remove("hidden");
+//     }, 3000)
+// }
 
 nextMovieBtn.addEventListener("click", () => {
     spinner.classList.remove("hidden");
@@ -1748,6 +1748,16 @@ nextMovieBtn.addEventListener("click", () => {
     }, 3000)
 })
 
+spinner.classList.remove("hidden");
+card.classList.add("hidden");
+nextMovieBtn.classList.add("hidden");
+startGame();
+renderButtons();
+setTimeout(() => {
+    spinner.classList.add("hidden");
+    card.classList.remove("hidden");
+    nextMovieBtn.classList.remove("hidden");
+}, 3000)
 
 // TODO:
 // 1. Next Movie Button functionality --- X
