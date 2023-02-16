@@ -1552,6 +1552,7 @@ const inputBtns = document.querySelector(".inputBtns");
 const resultDiv = document.querySelector(".result");
 const spinner = document.querySelector(".spinner");
 const card = document.querySelector(".card");
+const ans = document.querySelector("#ans");
 
 const renderButtons = () => {
 
@@ -1582,6 +1583,7 @@ const renderButtons = () => {
                     result.innerText = "You Lose!";
                     result.classList.add("lose");
                     result.classList.remove("win");
+                    ans.innerText = `The answer was ${generatedMovieTitle}`;
 
                     // disable all the buttons
                     const enabledBtns = document.querySelectorAll(".btn:not(:disabled)");
@@ -1645,6 +1647,7 @@ const renderButtons = () => {
                     result.innerText = "You Lose!";
                     result.classList.add("lose");
                     result.classList.remove("win");
+                    ans.innerText = `The answer was ${generatedMovieTitle}`;
 
                     // disable all the buttons
                     const enabledBtns = document.querySelectorAll(".btn:not(:disabled)");
