@@ -45,6 +45,12 @@ const renderButtons = () => {
 
     // append buttons for A-Z and 0-9 in inputBtns div
     for (let i = 65; i < 91; i++) {
+
+        // add a break tag after every 9th button
+        if (i === 74 || i === 83) {
+            inputBtns.appendChild(document.createElement("br"));
+        }
+
         const btn = document.createElement("button");
         btn.classList.add("letterBtn");
         btn.classList.add("btn");
@@ -87,6 +93,8 @@ const renderButtons = () => {
             }
         })
     }
+
+    inputBtns.appendChild(document.createElement("br"));
 
     for (let i = 48; i < 58; i++) {
         const btn = document.createElement("button");
