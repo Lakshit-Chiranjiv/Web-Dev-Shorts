@@ -2,6 +2,10 @@ const hr = document.querySelector('#hour');
 const mn = document.querySelector('#minute');
 const sc = document.querySelector('#second');
 
+const hrDiv = document.querySelector('.hr');
+const mnDiv = document.querySelector('.min');
+const scDiv = document.querySelector('.sec');
+
 setInterval(() => {
     let day = new Date();
     let hh = day.getHours() * 30;
@@ -27,7 +31,11 @@ setInterval(() => {
     sc.innerHTML = stime;
 
 
-    hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-    mn.style.transform = `rotateZ(${mm}deg)`;
-    sc.style.transform = `rotateZ(${ss}deg)`;
+    hrDiv.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+    mnDiv.style.transform = `rotateZ(${mm}deg)`;
+    scDiv.style.transform = `rotateZ(${ss}deg)`;
+
+    hr.style.transform = `rotateZ(-${hh+(mm/12)}deg)`;
+    mn.style.transform = `rotateZ(-${mm}deg)`;
+    sc.style.transform = `rotateZ(-${ss}deg)`;
 })
