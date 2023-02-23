@@ -22,10 +22,10 @@ body{
 }
 
 .card{
-    background-color: #fff;
+    background: linear-gradient(45deg, #9fbeff, #ffffff);
     padding: 0 24px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #9a48ff33;
+    box-shadow: 1px 1px 10px #a43dff33;
     margin: 10px;
     min-width: 70px;
 }
