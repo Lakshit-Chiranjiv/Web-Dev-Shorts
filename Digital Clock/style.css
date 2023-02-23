@@ -11,4 +11,18 @@ body{
 .container{
     margin: 0 auto;
     padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 10px;
 }
