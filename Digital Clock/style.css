@@ -1,11 +1,13 @@
 body{
-    background-color: #5e94ff;
+    background: linear-gradient(45deg, #45abff, #ecff60);
     font-size: 20px;
     color: #333;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .container{
@@ -23,7 +25,7 @@ body{
     background-color: #fff;
     padding: 0 24px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 10px #9a48ff33;
     margin: 10px;
     min-width: 70px;
 }
