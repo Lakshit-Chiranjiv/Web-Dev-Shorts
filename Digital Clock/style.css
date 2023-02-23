@@ -29,3 +29,24 @@ body{
     margin: 10px;
     min-width: 70px;
 }
+
+@media screen and (max-width: 600px) {
+
+    body{
+        font-size: 14px;
+        overflow: auto;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card{
+        margin: 10px 0;
+        padding: 0 16px;
+    }
+
+
+    
+}
