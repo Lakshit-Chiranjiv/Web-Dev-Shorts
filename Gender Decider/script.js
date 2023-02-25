@@ -13,3 +13,5 @@ const name = document.querySelector('#name');
 const maleImg = document.querySelector('#male');
 const femaleImg = document.querySelector('#female');
 const prob = document.querySelector('#prob');
+
+const baseURL = 'https://api.genderize.io/?name=';
