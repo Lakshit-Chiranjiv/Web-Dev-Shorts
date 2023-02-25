@@ -7,7 +7,6 @@ body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .container{
@@ -32,6 +31,7 @@ body{
     grid-template-columns: 8fr 4fr;
     grid-gap: 10px;
     margin: 10px 0;
+    margin-bottom: 30px;
     text-align: start;
 }
 
@@ -78,4 +78,23 @@ body{
 }
 #btn:active{
     transform: scale(0.95);
+}
+
+.outputDiv{
+    margin: 10px 0;
+    color: #fff;
+}
+
+.maleDiv{
+    background: linear-gradient(to right,#2f95de ,#33cce0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.femaleDiv{
+    background: linear-gradient(to right,#f95f9f ,#f95fd8);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
 }
