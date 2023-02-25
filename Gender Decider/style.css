@@ -9,6 +9,10 @@ body{
     min-height: 100vh;
 }
 
+h1{
+    margin-bottom: 0;
+}
+
 .container{
     margin: 0 auto;
     padding: 30px;
