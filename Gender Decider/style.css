@@ -104,3 +104,10 @@ h1{
 .hidden{
     display: none;
 }
+
+#error{
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
