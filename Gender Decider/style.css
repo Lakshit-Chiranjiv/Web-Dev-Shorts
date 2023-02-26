@@ -111,3 +111,39 @@ h1{
     font-weight: 600;
     margin: 0;
 }
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 10px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    img{
+        max-width: 64px;
+        max-height: 64px;
+        width: auto;
+        height: auto;
+    }
+    .card{
+        min-width: 200px;
+    }
+    .inputDiv{
+        grid-template-columns: 1fr;
+    }
+    .userInputDiv label{
+        text-align: center;
+    }
+    .userInputDiv input{
+        width: 90%;
+    }
+    #btn{
+        width: 100%;
+    }
+}
