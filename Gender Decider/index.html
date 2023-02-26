@@ -20,22 +20,26 @@
                 </div>
                 <button id="btn">Submit</button>
             </div>
-            <p id="error">Name cannot be empty</p>
+            <p id="error" class="hidden"></p>
             <div class="outputDiv">
                 <div class="desc">
                     <h3>Predict Gender by Name</h3>
                     <img src="gender.png" alt="gender" id="gender">
                 </div>
-                <div class="load">
+                <div class="load hidden">
                     <h3>Predicting...</h3>
                     <img src="gender.png" alt="gender" id="gender">
                 </div>
-                <div class="content">
-                    <!-- <h2 id="output">MALE</h2> -->
-                    <!-- <h4 id="name">Lakshit</h4> -->
-                    <!-- <img src="male.svg" alt="male" id="male"> -->
-                    <!-- <img src="female.svg" alt="female" id="female"> -->
-                    <!-- <h5>Probability : <span id="prob">99%</span></h5> -->
+                <div class="content hidden">
+                    <h2 id="output"></h2>
+                    <h4 id="name"></h4>
+                    <img src="male.svg" alt="male" id="male" class="hidden">
+                    <img src="female.svg" alt="female" id="female" class="hidden">
+                    <h5>Probability : <span id="prob"></span></h5>
+                </div>
+                <div class="unknown hidden">
+                    <h4>Could not identify</h4>
+                    <img src="gender.png" alt="gender" id="gender">
                 </div>
             </div>
             
