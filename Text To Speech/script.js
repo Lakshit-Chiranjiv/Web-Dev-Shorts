@@ -11,10 +11,9 @@ const speak = (text) => {
         return;
     }
     if (text !== '') {
-        const msg = new SpeechSynthesisUtterance(text);
-        speechSynthesis.speak(msg);
-        msg.onend = () => {
-            console.log('Done Speaking...');
+        const speakMsg = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(speakMsg);
+        speakMsg.onend = () => {
             msg.textContent = 'Your text, amplified'
         }
     }
