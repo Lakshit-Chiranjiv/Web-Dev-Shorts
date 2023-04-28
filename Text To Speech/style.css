@@ -1,0 +1,145 @@
+body{
+    background: linear-gradient(60deg, #45ff8f, #ff60f2);
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    min-width: 400px;
+    max-width: fit-content;
+}
+
+.inputDiv{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-gap: 10px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.userInputDiv label{
+    display: block;
+    text-align: left;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.userInputDiv textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    margin: 0;
+}
+
+.userInputDiv input:focus{
+    border-color: #45ff8f;
+}
+
+#btn{
+    background: linear-gradient(to right,#19ca76 ,#7ae033);
+    background-color: #19ca76;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    max-height: 50px;
+    align-self: self-end;
+}
+#btn:hover{
+    background: linear-gradient(to right,#54d08a ,#8de35e);
+    background-color: #54d08a;
+}
+#btn:active{
+    transform: scale(0.95);
+}
+
+.outputDiv{
+    margin: 10px 0;
+    color: #fff;
+    background: linear-gradient(to right,#2f95de ,#f95f9f);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.desc img{
+    width: 200px;
+}
+
+.hidden{
+    display: none;
+}
+
+#error{
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 10px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    img{
+        max-width: 64px;
+        max-height: 64px;
+        width: auto;
+        height: auto;
+    }
+    .card{
+        min-width: 200px;
+    }
+    .inputDiv{
+        grid-template-columns: 1fr;
+    }
+    .userInputDiv label{
+        text-align: center;
+    }
+    .userInputDiv input{
+        width: 90%;
+    }
+    #btn{
+        width: 100%;
+    }
+}
