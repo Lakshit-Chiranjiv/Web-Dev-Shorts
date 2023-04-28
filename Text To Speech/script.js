@@ -21,13 +21,12 @@ const speak = (text) => {
 
 btn.addEventListener('click', () => {
     const text = textInput.value;
-    msg.textContent = 'Processing...';
     if (text === '') {
         err.textContent = 'Please Enter Text';
         err.classList.remove('hidden');
         return;
     }
-
+    msg.textContent = 'Processing...';
     err.classList.add('hidden');
     speak(text);
     msg.textContent = 'Speaking...'
