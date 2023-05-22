@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Marvel Character App</title>
+</head>
+<body>
+    <h1>Marvel Character App</h1>
+    <div class="container">
+        <div class="card">
+            <div class="inputDiv">
+                <input type="text" id="textInput" placeholder="Character Name">
+                <button id="btn">Search</button>
+            </div>
+            <div class="list">
+            </div>
+            <p id="error" class="hidden"></p>
+            <div class="outputDiv">
+                <div class="desc">
+                    <h3 id="msg">Know Your Favourite</h3>
+                    <img src="marvelLogo.png" alt="marvelLogo">
+                </div>
+                <div class="descout hidden">
+                    <img src="http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55.jpg" alt="ironman" id="charImg">
+                    <h3 id="charName">Iron Man</h3>
+                    <p id="charDesc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorum officia voluptatibus cupiditate nulla alias rerum quis magnam corporis repellat!
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <h2 id="foot">- Created by <a id="name" target="_blank" href="https://lakshitcs1.vercel.app">Lakshit Chiranjiv Sagar</a></h2>
+    <script src="apiData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
