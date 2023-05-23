@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Riddles App</title>
+</head>
+<body>
+    <h1>Riddles App</h1>
+    <div class="container">
+        <div class="card">
+            <div class="btnDiv">
+                <button id="btn-next" class="btn">Next Riddle</button>
+            </div>
+            <p id="error" class="hidden"></p>
+            <div class="outputDiv">
+                <div class="loadDiv">
+                    <h3>Loading...</h3>
+                </div>
+                <div class="riddleDiv hidden">
+                    <h3>Think🤔!!</h3>
+                    <h4 id="riddle-title"></h4>
+                    <p id="riddle"></p>
+                </div>
+                <div class="ansDiv hidden">
+                    <button id="btn-ans" class="btn">
+                        See Answer👀
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <h2 id="foot">- Created by <a id="name" target="_blank" href="https://lakshitcs1.vercel.app/">Lakshit Chiranjiv Sagar</a></h2>
+    <script src="apiData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
