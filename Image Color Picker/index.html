@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Color Picker</title>
+</head>
+<body>
+    <h1>Image Color Picker</h1>
+    <div class="container">
+        <div class="card">
+            <div class="imgDiv">
+                <img src="./assets/mario.jpg" alt="mario_default" id="selectedimage">
+            </div>
+            <div class="btnsDiv hidden">
+                <label for="fileinput" class="btn">Select File</label>
+                <input type="file" name="fileInput" id="fileinput" class="hidden">
+    
+                <button id="btn-pick" class="btn">Pick Color</button>
+            </div>
+            <div class="output hidden">
+                <div class="colorcodes">
+                    <div class="colorcode hexc">
+                        <h3>HEX</h3>
+                        <p id="hex"></p>
+                    </div>
+                    <div class="colorcode rgbc">
+                        <h3>RGB</h3>
+                        <p id="rgb"></p>
+                    </div>
+                    <div class="colorcode hslc">
+                        <h3>HSL</h3>
+                        <p id="hsl"></p>
+                    </div>
+                </div>
+                <div class="colorbox">
+                    <div id="selectedcolor"></div>
+                </div>
+                <p id="copied">Color Copied!!!</p>
+            </div>
+            <p id="error" class="hidden"></p>
+        </div>
+    </div>
+
+    <h2 id="foot">- Created by <a id="name" target="_blank" href="https://lakshitcs1.vercel.app/">Lakshit Chiranjiv Sagar</a></h2>
+    <script src="apiData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
