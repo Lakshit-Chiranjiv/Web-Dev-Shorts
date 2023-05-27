@@ -1,0 +1,128 @@
+body{
+    background: linear-gradient(60deg, #fc4a1a,#f7b733);
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    color: white
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.factsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: #333;
+}
+
+.btnsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn{
+    background: linear-gradient(to right,#19ca76 ,#7ae033);
+    background-color: #19ca76;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    max-height: 50px;
+    align-self: self-end;
+}
+.btn:hover{
+    background: linear-gradient(to right,#54d08a ,#8de35e);
+    background-color: #54d08a;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+
+.hidden{
+    display: none;
+}
+
+#error{
+    background: linear-gradient(to right,#ff0000,#ff7040);
+    border-radius: 10px;
+    padding: 4px;
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#name {
+    color: #45ff8f;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 10px;
+    }
+    .card{
+        min-width: 200px;
+        max-width: 400px;
+    }
+
+    .btn{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    img{
+        max-width: 64px;
+        max-height: 64px;
+        width: auto;
+        height: auto;
+    }
+    #btn{
+        width: 100%;
+    }
+}
